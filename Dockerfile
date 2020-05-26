@@ -1,5 +1,4 @@
 FROM python:3.7.3-stretch
-MAINTAINER Karan Gupta <karangupta199920@gmail.com>
 
 # Create a working directory
 WORKDIR /src
@@ -8,8 +7,8 @@ WORKDIR /src
 COPY . app.py /src/
 
 # Install packages from requirements.txt
-# hadolint ignore=DL3013
 RUN pip install --upgrade pip && pip install --trusted-host pypi.python.org -r requirements.txt
+# hadolint ignore=DL3013
 
 # Expose port 80
 EXPOSE 80
