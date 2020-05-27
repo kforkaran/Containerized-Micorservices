@@ -1,3 +1,10 @@
+Port: 31122
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
+
 ./run_kubernetes.sh
 Flag --generator has been deprecated, has no effect and will be removed in the future.
 Error from server (AlreadyExists): pods "mlmicroserviceapi" already exists
